@@ -16,9 +16,9 @@ Vue.use(VueRouter)
     component: () => import('../views/detail.vue')
   },
   {
-    path: '/analysis',
-    name: 'analysis',
-    component: () => import('../views/analysis.vue')
+    path: '/upload',
+    name: 'upload',
+    component: () => import('../views/upload.vue')
   },
   {
     path: '/collection/:name',

@@ -42,8 +42,14 @@ export default new Vuex.Store({
         })
       })
     },
-  },
-  modules: {
-    
+    uploadFile({} , data)  {
+      return new Promise((resolve , reject ) => {
+        API().post('/api/upload' , data  ).then((res) => {
+          resolve(res.data)
+        }).catch((err) => {
+          reject(err)
+        })
+      })
+    }
   }
 })

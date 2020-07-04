@@ -11,7 +11,7 @@
          
         </a-menu-item>
         <a-menu-item key="analysis">
-          <router-link to="/Analysis">Analysis</router-link>
+          <router-link to="/upload">Analysis</router-link>
           
         </a-menu-item>
         <a-menu-item key="detail">

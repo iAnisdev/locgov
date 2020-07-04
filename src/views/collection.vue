@@ -6,12 +6,12 @@
           <div>
             <a-divider orientation="left">Collection related Result</a-divider>
              <div v-for="(news , index) in collectionData" :key="index">
-              <a-skeleton :loading="isLoading" active >
-            </a-skeleton>
                 <a-card style="margin-top: 1vh">
                 <h5><a :href="news.url" target="_blank">{{news.title}}</a></h5>
                 <i>{{news.timestamp}}</i>
                 <p v-if="news.description">{{news.description[0]}}</p>
+                <a-skeleton :loading="isLoading" active >
+                </a-skeleton>
               </a-card>
              </div>
           </div>
