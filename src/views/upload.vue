@@ -70,7 +70,7 @@ export default {
           label: label,
           fill: false,
           borderColor: myColors[index],
-          data: _.pluck(genere_data, 'Page Views')
+          data: _.pluck(genere_data, 'PageViews')
         })
       })
       new Chart(document.getElementById('lineChart'), {
